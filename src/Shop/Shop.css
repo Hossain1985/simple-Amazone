@@ -1,0 +1,9 @@
+.shop{
+    font-size: larger;
+    font-size: larger;
+}
+.shop-cointainer{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+}
