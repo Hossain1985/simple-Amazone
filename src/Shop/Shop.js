@@ -15,15 +15,15 @@ const Shop =() =>{
         <div className="shop-cointainer" >
 
             <div className="shop">
+             
 
-                {
-                    products.map(product =><Product 
-                        key={product.id}
+                {  
+                      products.map(product =><Product 
+                      key={product.id}
                       product={product}
                             
-                        ></Product>)
-
-                }
+                        />)
+}
              </div>
   
              <div className="chart" >

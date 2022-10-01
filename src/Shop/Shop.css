@@ -1,9 +1,14 @@
-.shop{
-    font-size: larger;
-    font-size: larger;
-}
 .shop-cointainer{
     display: grid;
     grid-template-columns: 4fr 1fr;
+
+}
+
+.shop{
+    font-size: larger;
+    font-size: larger;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
 
 }
