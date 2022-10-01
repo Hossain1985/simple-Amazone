@@ -10,6 +10,10 @@ const Shop =() =>{
         .then (data => setProducts(data))
 
     },[])
+
+    const handleAddToChart =(product) =>{
+        console.log(product)
+    }
     return ( 
 
         <div className="shop-cointainer" >
@@ -21,6 +25,8 @@ const Shop =() =>{
                       products.map(product =><Product 
                       key={product.id}
                       product={product}
+                      handleAddToChart={handleAddToChart}
+                     
                             
                         />)
 }

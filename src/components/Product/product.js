@@ -5,6 +5,11 @@ import './product.css'
 const Product = (props) =>{
     // console.log(props.product)
     const {name, img, seller , price , ratings} = props?.product ||{};
+   
+    // const handleAddToChart =() =>{
+    //     console.log('clicked')
+    // }
+       
     
     
 
@@ -21,9 +26,10 @@ const Product = (props) =>{
             <p className="product-name">Ratings:{ratings}Stars</p>
 
             </div>
-            <button className="btn-cart">
+            <button onClick={() =>props.handleAddToChart(props.product)} className="btn-cart">
                 <p>Add to cart</p>
             </button>
+            
 
             </div>
        </div>
